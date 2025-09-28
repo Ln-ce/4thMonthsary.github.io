@@ -596,7 +596,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "�";
 }
 
 .img-fluid {
@@ -10968,5 +10968,13 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
+  }.bg-pink {
+  background-color: pink !important;
+}
+
+}.spotify-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* space between songs */
+  margin-bottom: 20px;
 }

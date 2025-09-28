@@ -30,5 +30,17 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+// List of allowed passwords
+const allowedPasswords = ["Ben&ben28", "Ben&ben28"]; // you and your friend's passwords
+
+// Prompt for password
+let entered = prompt("Enter password to access the site:");
+
+if (allowedPasswords.includes(entered)) {
+    document.getElementById("main-content").style.display = "block"; // show content
+} else {
+    alert("Access denied!");
+    document.body.innerHTML = "<h2>Access Denied</h2>";
+}
 
 });
